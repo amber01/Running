@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188121981B821C1400C4A25E /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 188121971B821C1400C4A25E /* AMap.bundle */; };
+		18C4FCBC1B821581009673EC /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCBA1B821581009673EC /* MAMapKit.framework */; };
+		18C4FCBF1B8215A0009673EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCBE1B8215A0009673EC /* UIKit.framework */; };
+		18C4FCC11B8215B9009673EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC01B8215B9009673EC /* Foundation.framework */; };
+		18C4FCC31B8215C7009673EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC21B8215C7009673EC /* CoreGraphics.framework */; };
+		18C4FCC51B8215D2009673EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC41B8215D2009673EC /* QuartzCore.framework */; };
+		18C4FCC71B8215ED009673EC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC61B8215ED009673EC /* CoreTelephony.framework */; };
+		18C4FCC91B821610009673EC /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC81B821610009673EC /* libstdc++.6.0.9.dylib */; };
 		DB7D823C1B81B9A400599651 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D823B1B81B9A400599651 /* main.m */; };
 		DB7D823F1B81B9A400599651 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D823E1B81B9A400599651 /* AppDelegate.m */; };
 		DB7D82451B81B9A400599651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7D82431B81B9A400599651 /* Main.storyboard */; };
@@ -79,7 +87,6 @@
 		DB7D83971B81D29800599651 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83951B81D29800599651 /* Default-568h@2x.png */; };
 		DB7D83981B81D29800599651 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83961B81D29800599651 /* Default.png */; };
 		DB7D839A1B81DC3900599651 /* tabbar-more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83991B81DC3900599651 /* tabbar-more@2x.png */; };
-		DB7D839E1B81EBB600599651 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7D839D1B81EBB600599651 /* MAMapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +100,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		188121971B821C1400C4A25E /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = ../../AMap.bundle; sourceTree = "<group>"; };
+		18C4FCBA1B821581009673EC /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../MAMapKit.framework; sourceTree = "<group>"; };
+		18C4FCBE1B8215A0009673EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18C4FCC01B8215B9009673EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18C4FCC21B8215C7009673EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18C4FCC41B8215D2009673EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18C4FCC61B8215ED009673EC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		18C4FCC81B821610009673EC /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		DB7D82361B81B9A400599651 /* Running.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Running.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7D823A1B81B9A400599651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB7D823B1B81B9A400599651 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -227,7 +242,6 @@
 		DB7D83951B81D29800599651 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DB7D83961B81D29800599651 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DB7D83991B81DC3900599651 /* tabbar-more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-more@2x.png"; sourceTree = "<group>"; };
-		DB7D839D1B81EBB600599651 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = "../../../高德地图/MAMapKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,14 +249,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB7D839E1B81EBB600599651 /* MAMapKit.framework in Frameworks */,
+				18C4FCC91B821610009673EC /* libstdc++.6.0.9.dylib in Frameworks */,
+				18C4FCC71B8215ED009673EC /* CoreTelephony.framework in Frameworks */,
+				DB7D83881B81CF9600599651 /* CoreLocation.framework in Frameworks */,
+				18C4FCC51B8215D2009673EC /* QuartzCore.framework in Frameworks */,
+				18C4FCC31B8215C7009673EC /* CoreGraphics.framework in Frameworks */,
+				18C4FCC11B8215B9009673EC /* Foundation.framework in Frameworks */,
+				18C4FCBF1B8215A0009673EC /* UIKit.framework in Frameworks */,
+				18C4FCBC1B821581009673EC /* MAMapKit.framework in Frameworks */,
 				DB7D83941B81D03000599651 /* CFNetwork.framework in Frameworks */,
 				DB7D83921B81D02600599651 /* SystemConfiguration.framework in Frameworks */,
 				DB7D83901B81D01E00599651 /* MobileCoreServices.framework in Frameworks */,
 				DB7D838E1B81D01500599651 /* libz.1.2.5.dylib in Frameworks */,
 				DB7D838C1B81D00B00599651 /* libxml2.2.dylib in Frameworks */,
 				DB7D838A1B81D00300599651 /* Security.framework in Frameworks */,
-				DB7D83881B81CF9600599651 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +360,14 @@
 		DB7D82641B81B9C400599651 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB7D839D1B81EBB600599651 /* MAMapKit.framework */,
+				188121971B821C1400C4A25E /* AMap.bundle */,
+				18C4FCC81B821610009673EC /* libstdc++.6.0.9.dylib */,
+				18C4FCC61B8215ED009673EC /* CoreTelephony.framework */,
+				18C4FCC41B8215D2009673EC /* QuartzCore.framework */,
+				18C4FCC21B8215C7009673EC /* CoreGraphics.framework */,
+				18C4FCC01B8215B9009673EC /* Foundation.framework */,
+				18C4FCBE1B8215A0009673EC /* UIKit.framework */,
+				18C4FCBA1B821581009673EC /* MAMapKit.framework */,
 				DB7D83931B81D03000599651 /* CFNetwork.framework */,
 				DB7D83911B81D02600599651 /* SystemConfiguration.framework */,
 				DB7D838F1B81D01E00599651 /* MobileCoreServices.framework */,
@@ -729,9 +756,11 @@
 				TargetAttributes = {
 					DB7D82351B81B9A400599651 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 5B7X8SP7MC;
 					};
 					DB7D824E1B81B9A400599651 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 3JU58E4EC9;
 						TestTargetID = DB7D82351B81B9A400599651;
 					};
 				};
@@ -764,6 +793,7 @@
 				DB7D83971B81D29800599651 /* Default-568h@2x.png in Resources */,
 				DB7D82451B81B9A400599651 /* Main.storyboard in Resources */,
 				DB7D839A1B81DC3900599651 /* tabbar-more@2x.png in Resources */,
+				188121981B821C1400C4A25E /* AMap.bundle in Resources */,
 				DB7D82AA1B81B9C400599651 /* tabbar_home@2x.png in Resources */,
 				DB7D82A91B81B9C400599651 /* shops_btn@2x.png in Resources */,
 				DB7D82A81B81B9C400599651 /* navbar_back@2x.png in Resources */,
@@ -899,7 +929,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: tank wang (E6X4TP6JD7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: tank wang (E6X4TP6JD7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -921,6 +952,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "02139093-d864-4025-ae4e-01455b46734e";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -942,7 +974,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: tank wang (E6X4TP6JD7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: tank wang (E6X4TP6JD7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -957,6 +990,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "02139093-d864-4025-ae4e-01455b46734e";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -966,17 +1000,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Running/Frameworks",
 					"/Users/shlity/Desktop/高德地图",
+					/Users/apple/Desktop,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Running/Running-Prefix.pch";
 				INFOPLIST_FILE = Running/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -984,17 +1024,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Running/Frameworks",
 					"/Users/shlity/Desktop/高德地图",
+					/Users/apple/Desktop,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Running/Running-Prefix.pch";
 				INFOPLIST_FILE = Running/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -1002,6 +1048,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1015,6 +1063,7 @@
 				INFOPLIST_FILE = RunningTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Running.app/Running";
 			};
 			name = Debug;
@@ -1023,6 +1072,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1032,6 +1083,7 @@
 				INFOPLIST_FILE = RunningTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Running.app/Running";
 			};
 			name = Release;
