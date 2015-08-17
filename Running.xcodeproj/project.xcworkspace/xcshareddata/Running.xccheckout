@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>447A99C9-FA64-4762-9A3D-43FCF7B488C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Running</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D60C7F760C066791BBEB03240C18029EF2E758DE</key>
+		<string>https://github.com/amber01/Running.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Running.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D60C7F760C066791BBEB03240C18029EF2E758DE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/amber01/Running.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D60C7F760C066791BBEB03240C18029EF2E758DE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D60C7F760C066791BBEB03240C18029EF2E758DE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Running</string>
+		</dict>
+	</array>
+</dict>
+</plist>

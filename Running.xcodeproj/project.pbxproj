@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DB7D823C1B81B9A400599651 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D823B1B81B9A400599651 /* main.m */; };
 		DB7D823F1B81B9A400599651 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D823E1B81B9A400599651 /* AppDelegate.m */; };
-		DB7D82421B81B9A400599651 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D82411B81B9A400599651 /* ViewController.m */; };
 		DB7D82451B81B9A400599651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7D82431B81B9A400599651 /* Main.storyboard */; };
 		DB7D82471B81B9A400599651 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7D82461B81B9A400599651 /* Images.xcassets */; };
 		DB7D824A1B81B9A400599651 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB7D82481B81B9A400599651 /* LaunchScreen.xib */; };
@@ -80,6 +79,7 @@
 		DB7D83971B81D29800599651 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83951B81D29800599651 /* Default-568h@2x.png */; };
 		DB7D83981B81D29800599651 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83961B81D29800599651 /* Default.png */; };
 		DB7D839A1B81DC3900599651 /* tabbar-more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83991B81DC3900599651 /* tabbar-more@2x.png */; };
+		DB7D839E1B81EBB600599651 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7D839D1B81EBB600599651 /* MAMapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,8 +98,6 @@
 		DB7D823B1B81B9A400599651 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB7D823D1B81B9A400599651 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB7D823E1B81B9A400599651 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DB7D82401B81B9A400599651 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DB7D82411B81B9A400599651 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DB7D82441B81B9A400599651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB7D82461B81B9A400599651 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DB7D82491B81B9A400599651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -229,6 +227,7 @@
 		DB7D83951B81D29800599651 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DB7D83961B81D29800599651 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DB7D83991B81DC3900599651 /* tabbar-more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-more@2x.png"; sourceTree = "<group>"; };
+		DB7D839D1B81EBB600599651 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = "../../../高德地图/MAMapKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +235,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7D839E1B81EBB600599651 /* MAMapKit.framework in Frameworks */,
 				DB7D83941B81D03000599651 /* CFNetwork.framework in Frameworks */,
 				DB7D83921B81D02600599651 /* SystemConfiguration.framework in Frameworks */,
 				DB7D83901B81D01E00599651 /* MobileCoreServices.framework in Frameworks */,
@@ -279,8 +279,6 @@
 			children = (
 				DB7D823D1B81B9A400599651 /* AppDelegate.h */,
 				DB7D823E1B81B9A400599651 /* AppDelegate.m */,
-				DB7D82401B81B9A400599651 /* ViewController.h */,
-				DB7D82411B81B9A400599651 /* ViewController.m */,
 				DB7D82B11B81B9D000599651 /* MainViewController.h */,
 				DB7D82B21B81B9D000599651 /* MainViewController.m */,
 				DB7D82661B81B9C400599651 /* Main */,
@@ -342,6 +340,7 @@
 		DB7D82641B81B9C400599651 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB7D839D1B81EBB600599651 /* MAMapKit.framework */,
 				DB7D83931B81D03000599651 /* CFNetwork.framework */,
 				DB7D83911B81D02600599651 /* SystemConfiguration.framework */,
 				DB7D838F1B81D01E00599651 /* MobileCoreServices.framework */,
@@ -832,7 +831,6 @@
 				DB7D82B01B81B9C400599651 /* MBProgressHUD.m in Sources */,
 				DB7D83701B81CE7600599651 /* UIViewExt.m in Sources */,
 				DB7D83321B81C92B00599651 /* UIRefreshControl+AFNetworking.m in Sources */,
-				DB7D82421B81B9A400599651 /* ViewController.m in Sources */,
 				DB7D83291B81C92B00599651 /* AFURLRequestSerialization.m in Sources */,
 				DB7D83611B81CE7600599651 /* UIView+Toast.m in Sources */,
 				DB7D832B1B81C92B00599651 /* AFURLSessionManager.m in Sources */,
@@ -968,6 +966,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Running/Frameworks",
+					"/Users/shlity/Desktop/高德地图",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Running/Running-Prefix.pch";
 				INFOPLIST_FILE = Running/Info.plist;
@@ -981,6 +984,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Running/Frameworks",
+					"/Users/shlity/Desktop/高德地图",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Running/Running-Prefix.pch";
 				INFOPLIST_FILE = Running/Info.plist;
@@ -1047,6 +1055,7 @@
 				DB7D825B1B81B9A400599651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB7D825C1B81B9A400599651 /* Build configuration list for PBXNativeTarget "RunningTests" */ = {
 			isa = XCConfigurationList;
@@ -1055,6 +1064,7 @@
 				DB7D825E1B81B9A400599651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

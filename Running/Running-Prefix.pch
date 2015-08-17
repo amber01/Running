@@ -26,6 +26,8 @@
 #import "HttpCommunicateDefine.h"
 #import "ModelHeader.h"
 
+#define API_MAP_KEY   @"6654f03986b816bb05e59f6f459bbc97"
+
 //系统判定
 #define  IOS_VERSION        [[[UIDevice currentDevice]systemVersion]floatValue]
 
