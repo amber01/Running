@@ -18,6 +18,7 @@
 #import "GlobalUICommon.h"
 #import "UIUtils.h"
 #import "HexColor.h"
+#import "UIImage+ConvertColor.h"
 
 #import "MBProgressHUD+Add.h"
 #import "MBProgressHUD.h"

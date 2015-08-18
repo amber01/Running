@@ -1,17 +1,19 @@
+
 //
-//  UIImage+Mycategory.m
-//  GoddessClock
+//  UIImage+ConvertColor.m
+//  Running
 //
-//  Created by wubing on 14-9-13.
-//  Copyright (c) 2014年 iMac. All rights reserved.
+//  Created by shlity on 15/8/18.
+//  Copyright (c) 2015年 shlity. All rights reserved.
 //
 
-#import "UIImage+Mycategory.h"
+#import "UIImage+ConvertColor.h"
 
-@implementation UIImage (Mycategory)
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size
+@implementation UIImage (ConvertColor)
+
++ (UIImage *)imageWithColor:(UIColor *)color
 {
-    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
@@ -20,6 +22,8 @@
     
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+    
     return image;
 }
+
 @end

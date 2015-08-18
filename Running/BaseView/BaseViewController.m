@@ -74,7 +74,7 @@
 - (void)customBackView
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(10, 64/2-5, 110, 30);
+    button.frame = CGRectMake(10, 64/2-3, 110, 30);
     [button setImage:[UIImage imageNamed:@"navbar_back"] forState:UIControlStateNormal];
     button.contentHorizontalAlignment =UIControlContentHorizontalAlignmentLeft;
     [button addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];

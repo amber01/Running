@@ -15,6 +15,8 @@
 		18C4FCC51B8215D2009673EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC41B8215D2009673EC /* QuartzCore.framework */; };
 		18C4FCC71B8215ED009673EC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC61B8215ED009673EC /* CoreTelephony.framework */; };
 		18C4FCC91B821610009673EC /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC81B821610009673EC /* libstdc++.6.0.9.dylib */; };
+		DB1C13431B8338B3004AFD25 /* map_down_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1C13411B8338B3004AFD25 /* map_down_btn@2x.png */; };
+		DB1C13441B8338B3004AFD25 /* map_up_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1C13421B8338B3004AFD25 /* map_up_btn@2x.png */; };
 		DB7D823C1B81B9A400599651 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D823B1B81B9A400599651 /* main.m */; };
 		DB7D823F1B81B9A400599651 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D823E1B81B9A400599651 /* AppDelegate.m */; };
 		DB7D82451B81B9A400599651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7D82431B81B9A400599651 /* Main.storyboard */; };
@@ -33,9 +35,6 @@
 		DB7D82AF1B81B9C400599651 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D829B1B81B9C400599651 /* MBProgressHUD+Add.m */; };
 		DB7D82B01B81B9C400599651 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D829D1B81B9C400599651 /* MBProgressHUD.m */; };
 		DB7D82B31B81B9D000599651 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D82B21B81B9D000599651 /* MainViewController.m */; };
-		DB7D82B61B81C1BD00599651 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D82B51B81C1BD00599651 /* HistoryViewController.m */; };
-		DB7D82B91B81C1CC00599651 /* RunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D82B81B81C1CC00599651 /* RunningViewController.m */; };
-		DB7D82BC1B81C1DE00599651 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D82BB1B81C1DE00599651 /* MineViewController.m */; };
 		DB7D83231B81C92B00599651 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D82FF1B81C92B00599651 /* AFHTTPRequestOperation.m */; };
 		DB7D83241B81C92B00599651 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D83011B81C92B00599651 /* AFHTTPRequestOperationManager.m */; };
 		DB7D83251B81C92B00599651 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D83031B81C92B00599651 /* AFHTTPSessionManager.m */; };
@@ -67,7 +66,6 @@
 		DB7D836A1B81CE7600599651 /* NSString+MyCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D83521B81CE7600599651 /* NSString+MyCategory.m */; };
 		DB7D836B1B81CE7600599651 /* UIColor+MyCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D83541B81CE7600599651 /* UIColor+MyCategory.m */; };
 		DB7D836C1B81CE7600599651 /* UIDevice+Resolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D83561B81CE7600599651 /* UIDevice+Resolutions.m */; };
-		DB7D836D1B81CE7600599651 /* UIImage+Mycategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D83581B81CE7600599651 /* UIImage+Mycategory.m */; };
 		DB7D836E1B81CE7600599651 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D835A1B81CE7600599651 /* UIResponder+Router.m */; };
 		DB7D836F1B81CE7600599651 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D835C1B81CE7600599651 /* UIUtils.m */; };
 		DB7D83701B81CE7600599651 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D835E1B81CE7600599651 /* UIViewExt.m */; };
@@ -87,6 +85,14 @@
 		DB7D83971B81D29800599651 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83951B81D29800599651 /* Default-568h@2x.png */; };
 		DB7D83981B81D29800599651 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83961B81D29800599651 /* Default.png */; };
 		DB7D839A1B81DC3900599651 /* tabbar-more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83991B81DC3900599651 /* tabbar-more@2x.png */; };
+		DBF21B5C1B82DD2400ACFA4F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B5B1B82DD2400ACFA4F /* MineViewController.m */; };
+		DBF21B621B82DD6300ACFA4F /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B611B82DD6300ACFA4F /* HistoryViewController.m */; };
+		DBF21B681B82DDD200ACFA4F /* RunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B671B82DDD200ACFA4F /* RunningViewController.m */; };
+		DBF21B6B1B82DE4C00ACFA4F /* StartRunningButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B6A1B82DE4C00ACFA4F /* StartRunningButton.m */; };
+		DBF21B731B83039F00ACFA4F /* UIImage+ConvertColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B721B83039F00ACFA4F /* UIImage+ConvertColor.m */; };
+		DBF21B761B830FAD00ACFA4F /* StartRunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B751B830FAD00ACFA4F /* StartRunningViewController.m */; };
+		DBF21B791B83172600ACFA4F /* SFCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B781B83172600ACFA4F /* SFCountdownView.m */; };
+		DBF21B7F1B83233D00ACFA4F /* RunningInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B7E1B83233D00ACFA4F /* RunningInfoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +114,8 @@
 		18C4FCC41B8215D2009673EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18C4FCC61B8215ED009673EC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		18C4FCC81B821610009673EC /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		DB1C13411B8338B3004AFD25 /* map_down_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_down_btn@2x.png"; sourceTree = "<group>"; };
+		DB1C13421B8338B3004AFD25 /* map_up_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_up_btn@2x.png"; sourceTree = "<group>"; };
 		DB7D82361B81B9A400599651 /* Running.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Running.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7D823A1B81B9A400599651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB7D823B1B81B9A400599651 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,12 +144,6 @@
 		DB7D829D1B81B9C400599651 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		DB7D82B11B81B9D000599651 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DB7D82B21B81B9D000599651 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		DB7D82B41B81C1BD00599651 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
-		DB7D82B51B81C1BD00599651 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
-		DB7D82B71B81C1CC00599651 /* RunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningViewController.h; sourceTree = "<group>"; };
-		DB7D82B81B81C1CC00599651 /* RunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningViewController.m; sourceTree = "<group>"; };
-		DB7D82BA1B81C1DE00599651 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		DB7D82BB1B81C1DE00599651 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		DB7D82F61B81C5E800599651 /* ModelHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelHeader.h; sourceTree = "<group>"; };
 		DB7D82FB1B81C8E800599651 /* Commen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commen.h; sourceTree = "<group>"; };
 		DB7D82FE1B81C92B00599651 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -210,8 +212,6 @@
 		DB7D83541B81CE7600599651 /* UIColor+MyCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MyCategory.m"; sourceTree = "<group>"; };
 		DB7D83551B81CE7600599651 /* UIDevice+Resolutions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Resolutions.h"; sourceTree = "<group>"; };
 		DB7D83561B81CE7600599651 /* UIDevice+Resolutions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Resolutions.m"; sourceTree = "<group>"; };
-		DB7D83571B81CE7600599651 /* UIImage+Mycategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Mycategory.h"; sourceTree = "<group>"; };
-		DB7D83581B81CE7600599651 /* UIImage+Mycategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Mycategory.m"; sourceTree = "<group>"; };
 		DB7D83591B81CE7600599651 /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
 		DB7D835A1B81CE7600599651 /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
 		DB7D835B1B81CE7600599651 /* UIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtils.h; sourceTree = "<group>"; };
@@ -242,6 +242,22 @@
 		DB7D83951B81D29800599651 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DB7D83961B81D29800599651 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DB7D83991B81DC3900599651 /* tabbar-more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-more@2x.png"; sourceTree = "<group>"; };
+		DBF21B5A1B82DD2400ACFA4F /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		DBF21B5B1B82DD2400ACFA4F /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		DBF21B601B82DD6300ACFA4F /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		DBF21B611B82DD6300ACFA4F /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		DBF21B661B82DDD200ACFA4F /* RunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningViewController.h; sourceTree = "<group>"; };
+		DBF21B671B82DDD200ACFA4F /* RunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningViewController.m; sourceTree = "<group>"; };
+		DBF21B691B82DE4C00ACFA4F /* StartRunningButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartRunningButton.h; sourceTree = "<group>"; };
+		DBF21B6A1B82DE4C00ACFA4F /* StartRunningButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartRunningButton.m; sourceTree = "<group>"; };
+		DBF21B711B83039F00ACFA4F /* UIImage+ConvertColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ConvertColor.h"; sourceTree = "<group>"; };
+		DBF21B721B83039F00ACFA4F /* UIImage+ConvertColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ConvertColor.m"; sourceTree = "<group>"; };
+		DBF21B741B830FAC00ACFA4F /* StartRunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartRunningViewController.h; sourceTree = "<group>"; };
+		DBF21B751B830FAD00ACFA4F /* StartRunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartRunningViewController.m; sourceTree = "<group>"; };
+		DBF21B771B83172600ACFA4F /* SFCountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCountdownView.h; sourceTree = "<group>"; };
+		DBF21B781B83172600ACFA4F /* SFCountdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCountdownView.m; sourceTree = "<group>"; };
+		DBF21B7D1B83233D00ACFA4F /* RunningInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningInfoView.h; sourceTree = "<group>"; };
+		DBF21B7E1B83233D00ACFA4F /* RunningInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningInfoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,113 +407,11 @@
 		DB7D82661B81B9C400599651 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DB7D82671B81B9C400599651 /* History */,
-				DB7D826D1B81B9C400599651 /* Running */,
-				DB7D82731B81B9C400599651 /* Mine */,
+				DBF21B2D1B82DCBA00ACFA4F /* History */,
+				DBF21B3F1B82DCBA00ACFA4F /* Running */,
+				DBF21B341B82DCBA00ACFA4F /* Mine */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		DB7D82671B81B9C400599651 /* History */ = {
-			isa = PBXGroup;
-			children = (
-				DB7D82681B81B9C400599651 /* Controller */,
-				DB7D826B1B81B9C400599651 /* Model */,
-				DB7D826C1B81B9C400599651 /* View */,
-			);
-			name = History;
-			path = Home;
-			sourceTree = "<group>";
-		};
-		DB7D82681B81B9C400599651 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DB7D82B41B81C1BD00599651 /* HistoryViewController.h */,
-				DB7D82B51B81C1BD00599651 /* HistoryViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DB7D826B1B81B9C400599651 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DB7D826C1B81B9C400599651 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DB7D826D1B81B9C400599651 /* Running */ = {
-			isa = PBXGroup;
-			children = (
-				DB7D826E1B81B9C400599651 /* Controller */,
-				DB7D82711B81B9C400599651 /* Model */,
-				DB7D82721B81B9C400599651 /* View */,
-			);
-			name = Running;
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		DB7D826E1B81B9C400599651 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DB7D82B71B81C1CC00599651 /* RunningViewController.h */,
-				DB7D82B81B81C1CC00599651 /* RunningViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DB7D82711B81B9C400599651 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DB7D82721B81B9C400599651 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DB7D82731B81B9C400599651 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				DB7D82741B81B9C400599651 /* Controller */,
-				DB7D82751B81B9C400599651 /* Model */,
-				DB7D82781B81B9C400599651 /* View */,
-			);
-			name = Mine;
-			path = More;
-			sourceTree = "<group>";
-		};
-		DB7D82741B81B9C400599651 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DB7D82BA1B81C1DE00599651 /* MineViewController.h */,
-				DB7D82BB1B81C1DE00599651 /* MineViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DB7D82751B81B9C400599651 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DB7D82781B81B9C400599651 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		DB7D828C1B81B9C400599651 /* PublicModel */ = {
@@ -527,6 +441,8 @@
 				DB7D82941B81B9C400599651 /* tabbar_shopping@2x.png */,
 				DB7D82951B81B9C400599651 /* tabbar_store@2x.png */,
 				DB7D83991B81DC3900599651 /* tabbar-more@2x.png */,
+				DB1C13411B8338B3004AFD25 /* map_down_btn@2x.png */,
+				DB1C13421B8338B3004AFD25 /* map_up_btn@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -601,14 +517,14 @@
 				DB7D83541B81CE7600599651 /* UIColor+MyCategory.m */,
 				DB7D83551B81CE7600599651 /* UIDevice+Resolutions.h */,
 				DB7D83561B81CE7600599651 /* UIDevice+Resolutions.m */,
-				DB7D83571B81CE7600599651 /* UIImage+Mycategory.h */,
-				DB7D83581B81CE7600599651 /* UIImage+Mycategory.m */,
 				DB7D83591B81CE7600599651 /* UIResponder+Router.h */,
 				DB7D835A1B81CE7600599651 /* UIResponder+Router.m */,
 				DB7D835B1B81CE7600599651 /* UIUtils.h */,
 				DB7D835C1B81CE7600599651 /* UIUtils.m */,
 				DB7D835D1B81CE7600599651 /* UIViewExt.h */,
 				DB7D835E1B81CE7600599651 /* UIViewExt.m */,
+				DBF21B711B83039F00ACFA4F /* UIImage+ConvertColor.h */,
+				DBF21B721B83039F00ACFA4F /* UIImage+ConvertColor.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -707,6 +623,113 @@
 			path = SBJson;
 			sourceTree = "<group>";
 		};
+		DBF21B2D1B82DCBA00ACFA4F /* History */ = {
+			isa = PBXGroup;
+			children = (
+				DBF21B2E1B82DCBA00ACFA4F /* Controller */,
+				DBF21B2F1B82DCBA00ACFA4F /* Model */,
+				DBF21B301B82DCBA00ACFA4F /* View */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		DBF21B2E1B82DCBA00ACFA4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBF21B601B82DD6300ACFA4F /* HistoryViewController.h */,
+				DBF21B611B82DD6300ACFA4F /* HistoryViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBF21B2F1B82DCBA00ACFA4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBF21B301B82DCBA00ACFA4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBF21B341B82DCBA00ACFA4F /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				DBF21B351B82DCBA00ACFA4F /* Controller */,
+				DBF21B391B82DCBA00ACFA4F /* View */,
+				DBF21B381B82DCBA00ACFA4F /* Model */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		DBF21B351B82DCBA00ACFA4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBF21B5A1B82DD2400ACFA4F /* MineViewController.h */,
+				DBF21B5B1B82DD2400ACFA4F /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBF21B381B82DCBA00ACFA4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBF21B391B82DCBA00ACFA4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBF21B3F1B82DCBA00ACFA4F /* Running */ = {
+			isa = PBXGroup;
+			children = (
+				DBF21B401B82DCBA00ACFA4F /* Controller */,
+				DBF21B431B82DCBA00ACFA4F /* Model */,
+				DBF21B441B82DCBA00ACFA4F /* View */,
+			);
+			path = Running;
+			sourceTree = "<group>";
+		};
+		DBF21B401B82DCBA00ACFA4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBF21B661B82DDD200ACFA4F /* RunningViewController.h */,
+				DBF21B671B82DDD200ACFA4F /* RunningViewController.m */,
+				DBF21B741B830FAC00ACFA4F /* StartRunningViewController.h */,
+				DBF21B751B830FAD00ACFA4F /* StartRunningViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBF21B431B82DCBA00ACFA4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBF21B441B82DCBA00ACFA4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBF21B771B83172600ACFA4F /* SFCountdownView.h */,
+				DBF21B781B83172600ACFA4F /* SFCountdownView.m */,
+				DBF21B691B82DE4C00ACFA4F /* StartRunningButton.h */,
+				DBF21B6A1B82DE4C00ACFA4F /* StartRunningButton.m */,
+				DBF21B7D1B83233D00ACFA4F /* RunningInfoView.h */,
+				DBF21B7E1B83233D00ACFA4F /* RunningInfoView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -792,6 +815,7 @@
 				DB7D82AB1B81B9C400599651 /* tabbar_mine@2x.png in Resources */,
 				DB7D83971B81D29800599651 /* Default-568h@2x.png in Resources */,
 				DB7D82451B81B9A400599651 /* Main.storyboard in Resources */,
+				DB1C13441B8338B3004AFD25 /* map_up_btn@2x.png in Resources */,
 				DB7D839A1B81DC3900599651 /* tabbar-more@2x.png in Resources */,
 				188121981B821C1400C4A25E /* AMap.bundle in Resources */,
 				DB7D82AA1B81B9C400599651 /* tabbar_home@2x.png in Resources */,
@@ -801,6 +825,7 @@
 				DB7D83981B81D29800599651 /* Default.png in Resources */,
 				DB7D82AE1B81B9C400599651 /* tabbar_store@2x.png in Resources */,
 				DB7D824A1B81B9A400599651 /* LaunchScreen.xib in Resources */,
+				DB1C13431B8338B3004AFD25 /* map_down_btn@2x.png in Resources */,
 				DB7D82471B81B9A400599651 /* Images.xcassets in Resources */,
 				DB7D82AD1B81B9C400599651 /* tabbar_shopping@2x.png in Resources */,
 			);
@@ -821,6 +846,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB7D83631B81CE7600599651 /* GlobalUICommon.m in Sources */,
+				DBF21B731B83039F00ACFA4F /* UIImage+ConvertColor.m in Sources */,
 				DB7D83861B81CEB000599651 /* SBJsonWriter.m in Sources */,
 				DB7D832F1B81C92B00599651 /* UIButton+AFNetworking.m in Sources */,
 				DB7D829E1B81B9C400599651 /* BaseNavigationController.m in Sources */,
@@ -830,27 +856,30 @@
 				DB7D832D1B81C92B00599651 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				DB7D83841B81CEB000599651 /* SBJsonBase.m in Sources */,
 				DB7D832E1B81C92B00599651 /* UIAlertView+AFNetworking.m in Sources */,
+				DBF21B6B1B82DE4C00ACFA4F /* StartRunningButton.m in Sources */,
 				DB7D836B1B81CE7600599651 /* UIColor+MyCategory.m in Sources */,
-				DB7D82B91B81C1CC00599651 /* RunningViewController.m in Sources */,
 				DB7D83661B81CE7600599651 /* NSDate+Category.m in Sources */,
 				DB7D832A1B81C92B00599651 /* AFURLResponseSerialization.m in Sources */,
 				DB7D83651B81CE7600599651 /* NSData+Category.m in Sources */,
 				DB7D83671B81CE7600599651 /* NSDateFormatter+Category.m in Sources */,
+				DBF21B7F1B83233D00ACFA4F /* RunningInfoView.m in Sources */,
+				DBF21B791B83172600ACFA4F /* SFCountdownView.m in Sources */,
 				DB7D83331B81C92B00599651 /* UIWebView+AFNetworking.m in Sources */,
 				DB7D83231B81C92B00599651 /* AFHTTPRequestOperation.m in Sources */,
 				DB7D836A1B81CE7600599651 /* NSString+MyCategory.m in Sources */,
-				DB7D82B61B81C1BD00599651 /* HistoryViewController.m in Sources */,
+				DBF21B761B830FAD00ACFA4F /* StartRunningViewController.m in Sources */,
+				DBF21B621B82DD6300ACFA4F /* HistoryViewController.m in Sources */,
 				DB7D83281B81C92B00599651 /* AFURLConnectionOperation.m in Sources */,
-				DB7D82BC1B81C1DE00599651 /* MineViewController.m in Sources */,
 				DB7D83301B81C92B00599651 /* UIImageView+AFNetworking.m in Sources */,
 				DB7D83751B81CE9B00599651 /* CKHttpCommunicate.m in Sources */,
 				DB7D836C1B81CE7600599651 /* UIDevice+Resolutions.m in Sources */,
 				DB7D83641B81CE7600599651 /* HexColor.m in Sources */,
+				DBF21B5C1B82DD2400ACFA4F /* MineViewController.m in Sources */,
 				DB7D83311B81C92B00599651 /* UIProgressView+AFNetworking.m in Sources */,
 				DB7D829F1B81B9C400599651 /* BaseViewController.m in Sources */,
 				DB7D83851B81CEB000599651 /* SBJsonParser.m in Sources */,
 				DB7D83831B81CEB000599651 /* NSString+SBJSON.m in Sources */,
-				DB7D836D1B81CE7600599651 /* UIImage+Mycategory.m in Sources */,
+				DBF21B681B82DDD200ACFA4F /* RunningViewController.m in Sources */,
 				DB7D83241B81C92B00599651 /* AFHTTPRequestOperationManager.m in Sources */,
 				DB7D83251B81C92B00599651 /* AFHTTPSessionManager.m in Sources */,
 				DB7D83601B81CE7600599651 /* UIView+Additions.m in Sources */,
