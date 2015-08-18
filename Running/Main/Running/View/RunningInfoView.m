@@ -9,7 +9,9 @@
 #import "RunningInfoView.h"
 
 @implementation RunningInfoView
-
+{
+    UIImageView *imageView;
+}
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -101,10 +103,10 @@
         //
         _showViewBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _showViewBtn.frame = CGRectMake(0, lineView4.bottom, ScreenWidth, 22);
-        [_showViewBtn addTarget:self action:@selector(showViewAction) forControlEvents:UIControlEventTouchUpInside];
+        [_showViewBtn addTarget:self action:@selector(showViewAction:) forControlEvents:UIControlEventTouchUpInside];
         [_showViewBtn setBackgroundColor:[UIColor colorWithHexString:@"#f5f5f5"]];
         
-        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(ScreenWidth/2 - 7.5, 3, 15, 15)];
+        imageView = [[UIImageView alloc]initWithFrame:CGRectMake(ScreenWidth/2 - 7.5, 3, 15, 15)];
         imageView.image = [UIImage imageNamed:@"map_up_btn"];
         [_showViewBtn addSubview:imageView];
         
@@ -129,9 +131,14 @@
     return self;
 }
 
-- (void)showViewAction
+- (void)showViewAction:(UIButton *)button
 {
-    
+    [button setSelected:!button.selected];
+    if (button.selected == NO) {
+        imageView.image = [UIImage imageNamed:@"map_up_btn"];
+    }else{
+        imageView.image = [UIImage imageNamed:@"map_down_btn"];
+    }
 }
 
 @end

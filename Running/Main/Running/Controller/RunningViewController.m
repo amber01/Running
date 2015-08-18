@@ -28,8 +28,6 @@
     [super viewDidLoad];
     self.navTitle = @"运动";
     [self createMapView];
-    
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -76,9 +74,9 @@ updatingLocation:(BOOL)updatingLocation
         MAUserLocationRepresentation *pre = [[MAUserLocationRepresentation alloc] init];
         pre.fillColor = [UIColor colorWithRed:0.9 green:0.1 blue:0.1 alpha:0];
         pre.strokeColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.9 alpha:0];
-        
         //pre.lineWidth = 3;
         //pre.lineDashPattern = @[@6, @3];
+        pre.image = [UIImage imageNamed:@"location_image"];
         
         [_mapView updateUserLocationRepresentation:pre];
         

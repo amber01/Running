@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183C20C01B837495005DAC45 /* location_current_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C20BF1B837495005DAC45 /* location_current_icon@2x.png */; };
+		183C20C21B837630005DAC45 /* endPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C20C11B837630005DAC45 /* endPoint@2x.png */; };
 		188121981B821C1400C4A25E /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 188121971B821C1400C4A25E /* AMap.bundle */; };
+		1881219A1B8372AE00C4A25E /* location_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 188121991B8372AE00C4A25E /* location_image@2x.png */; };
 		18C4FCBC1B821581009673EC /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCBA1B821581009673EC /* MAMapKit.framework */; };
 		18C4FCBF1B8215A0009673EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCBE1B8215A0009673EC /* UIKit.framework */; };
 		18C4FCC11B8215B9009673EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC01B8215B9009673EC /* Foundation.framework */; };
@@ -106,7 +109,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183C20BF1B837495005DAC45 /* location_current_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_current_icon@2x.png"; sourceTree = "<group>"; };
+		183C20C11B837630005DAC45 /* endPoint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "endPoint@2x.png"; sourceTree = "<group>"; };
 		188121971B821C1400C4A25E /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = ../../AMap.bundle; sourceTree = "<group>"; };
+		188121991B8372AE00C4A25E /* location_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_image@2x.png"; sourceTree = "<group>"; };
 		18C4FCBA1B821581009673EC /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../MAMapKit.framework; sourceTree = "<group>"; };
 		18C4FCBE1B8215A0009673EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18C4FCC01B8215B9009673EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -443,6 +449,9 @@
 				DB7D83991B81DC3900599651 /* tabbar-more@2x.png */,
 				DB1C13411B8338B3004AFD25 /* map_down_btn@2x.png */,
 				DB1C13421B8338B3004AFD25 /* map_up_btn@2x.png */,
+				188121991B8372AE00C4A25E /* location_image@2x.png */,
+				183C20BF1B837495005DAC45 /* location_current_icon@2x.png */,
+				183C20C11B837630005DAC45 /* endPoint@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -818,13 +827,16 @@
 				DB1C13441B8338B3004AFD25 /* map_up_btn@2x.png in Resources */,
 				DB7D839A1B81DC3900599651 /* tabbar-more@2x.png in Resources */,
 				188121981B821C1400C4A25E /* AMap.bundle in Resources */,
+				183C20C01B837495005DAC45 /* location_current_icon@2x.png in Resources */,
 				DB7D82AA1B81B9C400599651 /* tabbar_home@2x.png in Resources */,
 				DB7D82A91B81B9C400599651 /* shops_btn@2x.png in Resources */,
 				DB7D82A81B81B9C400599651 /* navbar_back@2x.png in Resources */,
 				DB7D82AC1B81B9C400599651 /* tabbar_more@2x.png in Resources */,
 				DB7D83981B81D29800599651 /* Default.png in Resources */,
 				DB7D82AE1B81B9C400599651 /* tabbar_store@2x.png in Resources */,
+				1881219A1B8372AE00C4A25E /* location_image@2x.png in Resources */,
 				DB7D824A1B81B9A400599651 /* LaunchScreen.xib in Resources */,
+				183C20C21B837630005DAC45 /* endPoint@2x.png in Resources */,
 				DB1C13431B8338B3004AFD25 /* map_down_btn@2x.png in Resources */,
 				DB7D82471B81B9A400599651 /* Images.xcassets in Resources */,
 				DB7D82AD1B81B9C400599651 /* tabbar_shopping@2x.png in Resources */,
@@ -981,7 +993,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "02139093-d864-4025-ae4e-01455b46734e";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1019,7 +1031,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "02139093-d864-4025-ae4e-01455b46734e";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
