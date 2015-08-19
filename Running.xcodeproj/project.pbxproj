@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		183C20C01B837495005DAC45 /* location_current_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C20BF1B837495005DAC45 /* location_current_icon@2x.png */; };
-		183C20C21B837630005DAC45 /* endPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C20C11B837630005DAC45 /* endPoint@2x.png */; };
 		188121981B821C1400C4A25E /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 188121971B821C1400C4A25E /* AMap.bundle */; };
 		1881219A1B8372AE00C4A25E /* location_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 188121991B8372AE00C4A25E /* location_image@2x.png */; };
 		18C4FCBC1B821581009673EC /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCBA1B821581009673EC /* MAMapKit.framework */; };
@@ -89,11 +88,11 @@
 		DB7D83981B81D29800599651 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83961B81D29800599651 /* Default.png */; };
 		DB7D839A1B81DC3900599651 /* tabbar-more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83991B81DC3900599651 /* tabbar-more@2x.png */; };
 		DBBCDFB81B842DEC008F1735 /* AnnotationLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFB71B842DEC008F1735 /* AnnotationLocation.m */; };
-		DBBCDFBD1B842FCC008F1735 /* animatedCar_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBCDFB91B842FCC008F1735 /* animatedCar_1.png */; };
-		DBBCDFBE1B842FCC008F1735 /* animatedCar_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBCDFBA1B842FCC008F1735 /* animatedCar_2.png */; };
-		DBBCDFBF1B842FCC008F1735 /* animatedCar_3.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBCDFBB1B842FCC008F1735 /* animatedCar_3.png */; };
-		DBBCDFC01B842FCC008F1735 /* animatedCar_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBCDFBC1B842FCC008F1735 /* animatedCar_4.png */; };
 		DBBCDFC31B843047008F1735 /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFC21B843047008F1735 /* CustomAnnotationView.m */; };
+		DBBCDFCD1B846FF4008F1735 /* CACoordLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFC61B846FF4008F1735 /* CACoordLayer.m */; };
+		DBBCDFCE1B846FF4008F1735 /* MovingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFC81B846FF4008F1735 /* MovingAnnotationView.m */; };
+		DBBCDFCF1B846FF4008F1735 /* TracingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFCA1B846FF4008F1735 /* TracingPoint.m */; };
+		DBBCDFD01B846FF4008F1735 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFCC1B846FF4008F1735 /* Util.m */; };
 		DBF21B5C1B82DD2400ACFA4F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B5B1B82DD2400ACFA4F /* MineViewController.m */; };
 		DBF21B621B82DD6300ACFA4F /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B611B82DD6300ACFA4F /* HistoryViewController.m */; };
 		DBF21B681B82DDD200ACFA4F /* RunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B671B82DDD200ACFA4F /* RunningViewController.m */; };
@@ -116,7 +115,6 @@
 
 /* Begin PBXFileReference section */
 		183C20BF1B837495005DAC45 /* location_current_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_current_icon@2x.png"; sourceTree = "<group>"; };
-		183C20C11B837630005DAC45 /* endPoint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "endPoint@2x.png"; sourceTree = "<group>"; };
 		188121971B821C1400C4A25E /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = ../../AMap.bundle; sourceTree = "<group>"; };
 		188121991B8372AE00C4A25E /* location_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_image@2x.png"; sourceTree = "<group>"; };
 		18C4FCBA1B821581009673EC /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../MAMapKit.framework; sourceTree = "<group>"; };
@@ -256,12 +254,16 @@
 		DB7D83991B81DC3900599651 /* tabbar-more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-more@2x.png"; sourceTree = "<group>"; };
 		DBBCDFB61B842DEC008F1735 /* AnnotationLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationLocation.h; sourceTree = "<group>"; };
 		DBBCDFB71B842DEC008F1735 /* AnnotationLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationLocation.m; sourceTree = "<group>"; };
-		DBBCDFB91B842FCC008F1735 /* animatedCar_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_1.png; sourceTree = "<group>"; };
-		DBBCDFBA1B842FCC008F1735 /* animatedCar_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_2.png; sourceTree = "<group>"; };
-		DBBCDFBB1B842FCC008F1735 /* animatedCar_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_3.png; sourceTree = "<group>"; };
-		DBBCDFBC1B842FCC008F1735 /* animatedCar_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_4.png; sourceTree = "<group>"; };
 		DBBCDFC11B843047008F1735 /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
 		DBBCDFC21B843047008F1735 /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
+		DBBCDFC51B846FF4008F1735 /* CACoordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACoordLayer.h; sourceTree = "<group>"; };
+		DBBCDFC61B846FF4008F1735 /* CACoordLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACoordLayer.m; sourceTree = "<group>"; };
+		DBBCDFC71B846FF4008F1735 /* MovingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingAnnotationView.h; sourceTree = "<group>"; };
+		DBBCDFC81B846FF4008F1735 /* MovingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingAnnotationView.m; sourceTree = "<group>"; };
+		DBBCDFC91B846FF4008F1735 /* TracingPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracingPoint.h; sourceTree = "<group>"; };
+		DBBCDFCA1B846FF4008F1735 /* TracingPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracingPoint.m; sourceTree = "<group>"; };
+		DBBCDFCB1B846FF4008F1735 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		DBBCDFCC1B846FF4008F1735 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		DBF21B5A1B82DD2400ACFA4F /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		DBF21B5B1B82DD2400ACFA4F /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		DBF21B601B82DD6300ACFA4F /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
@@ -465,11 +467,6 @@
 				DB1C13421B8338B3004AFD25 /* map_up_btn@2x.png */,
 				188121991B8372AE00C4A25E /* location_image@2x.png */,
 				183C20BF1B837495005DAC45 /* location_current_icon@2x.png */,
-				183C20C11B837630005DAC45 /* endPoint@2x.png */,
-				DBBCDFB91B842FCC008F1735 /* animatedCar_1.png */,
-				DBBCDFBA1B842FCC008F1735 /* animatedCar_2.png */,
-				DBBCDFBB1B842FCC008F1735 /* animatedCar_3.png */,
-				DBBCDFBC1B842FCC008F1735 /* animatedCar_4.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -515,6 +512,7 @@
 		DB7D82BD1B81C57000599651 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				DBBCDFC41B846FF4008F1735 /* MovingAnnotationSource */,
 				DB7D833A1B81CE7600599651 /* CommonClass.h */,
 				DB7D833B1B81CE7600599651 /* CommonClass.m */,
 				DB7D833C1B81CE7600599651 /* UIView+Additions.h */,
@@ -648,6 +646,21 @@
 				DB7D83811B81CEB000599651 /* SBJsonWriter.m */,
 			);
 			path = SBJson;
+			sourceTree = "<group>";
+		};
+		DBBCDFC41B846FF4008F1735 /* MovingAnnotationSource */ = {
+			isa = PBXGroup;
+			children = (
+				DBBCDFC51B846FF4008F1735 /* CACoordLayer.h */,
+				DBBCDFC61B846FF4008F1735 /* CACoordLayer.m */,
+				DBBCDFC71B846FF4008F1735 /* MovingAnnotationView.h */,
+				DBBCDFC81B846FF4008F1735 /* MovingAnnotationView.m */,
+				DBBCDFC91B846FF4008F1735 /* TracingPoint.h */,
+				DBBCDFCA1B846FF4008F1735 /* TracingPoint.m */,
+				DBBCDFCB1B846FF4008F1735 /* Util.h */,
+				DBBCDFCC1B846FF4008F1735 /* Util.m */,
+			);
+			path = MovingAnnotationSource;
 			sourceTree = "<group>";
 		};
 		DBF21B2D1B82DCBA00ACFA4F /* History */ = {
@@ -843,7 +856,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBBCDFBE1B842FCC008F1735 /* animatedCar_2.png in Resources */,
 				DB7D82AB1B81B9C400599651 /* tabbar_mine@2x.png in Resources */,
 				DB7D83971B81D29800599651 /* Default-568h@2x.png in Resources */,
 				DB7D82451B81B9A400599651 /* Main.storyboard in Resources */,
@@ -857,13 +869,9 @@
 				DB7D82AC1B81B9C400599651 /* tabbar_more@2x.png in Resources */,
 				DB7D83981B81D29800599651 /* Default.png in Resources */,
 				DB7D82AE1B81B9C400599651 /* tabbar_store@2x.png in Resources */,
-				DBBCDFBD1B842FCC008F1735 /* animatedCar_1.png in Resources */,
 				1881219A1B8372AE00C4A25E /* location_image@2x.png in Resources */,
 				DB7D824A1B81B9A400599651 /* LaunchScreen.xib in Resources */,
-				183C20C21B837630005DAC45 /* endPoint@2x.png in Resources */,
 				DB1C13431B8338B3004AFD25 /* map_down_btn@2x.png in Resources */,
-				DBBCDFBF1B842FCC008F1735 /* animatedCar_3.png in Resources */,
-				DBBCDFC01B842FCC008F1735 /* animatedCar_4.png in Resources */,
 				DB7D82471B81B9A400599651 /* Images.xcassets in Resources */,
 				DB7D82AD1B81B9C400599651 /* tabbar_shopping@2x.png in Resources */,
 			);
@@ -897,9 +905,12 @@
 				DBBCDFB81B842DEC008F1735 /* AnnotationLocation.m in Sources */,
 				DBF21B6B1B82DE4C00ACFA4F /* StartRunningButton.m in Sources */,
 				DB7D836B1B81CE7600599651 /* UIColor+MyCategory.m in Sources */,
+				DBBCDFCE1B846FF4008F1735 /* MovingAnnotationView.m in Sources */,
 				DB7D83661B81CE7600599651 /* NSDate+Category.m in Sources */,
+				DBBCDFCD1B846FF4008F1735 /* CACoordLayer.m in Sources */,
 				DB7D832A1B81C92B00599651 /* AFURLResponseSerialization.m in Sources */,
 				DB7D83651B81CE7600599651 /* NSData+Category.m in Sources */,
+				DBBCDFD01B846FF4008F1735 /* Util.m in Sources */,
 				DB7D83671B81CE7600599651 /* NSDateFormatter+Category.m in Sources */,
 				DBF21B7F1B83233D00ACFA4F /* RunningInfoView.m in Sources */,
 				DBF21B791B83172600ACFA4F /* SFCountdownView.m in Sources */,
@@ -916,6 +927,7 @@
 				DB7D83641B81CE7600599651 /* HexColor.m in Sources */,
 				DBF21B5C1B82DD2400ACFA4F /* MineViewController.m in Sources */,
 				DB7D83311B81C92B00599651 /* UIProgressView+AFNetworking.m in Sources */,
+				DBBCDFCF1B846FF4008F1735 /* TracingPoint.m in Sources */,
 				DB7D829F1B81B9C400599651 /* BaseViewController.m in Sources */,
 				DB7D83851B81CEB000599651 /* SBJsonParser.m in Sources */,
 				DB7D83831B81CEB000599651 /* NSString+SBJSON.m in Sources */,
