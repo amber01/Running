@@ -9,12 +9,15 @@
 #import "StartRunningViewController.h"
 #import "RunningInfoView.h"
 #import <MAMapKit/MAMapKit.h>
+#import "AnnotationLocation.h"
+#import "CustomAnnotationView.h"
 
 @interface StartRunningViewController ()<MAMapViewDelegate>
 {
     MAMapView       *_mapView;
 }
 
+@property (nonatomic, strong) AnnotationLocation *animatedCarAnnotation;
 
 @end
 
@@ -46,6 +49,21 @@
     _mapView.scaleOrigin = CGPointMake(_mapView.scaleOrigin.x, 22);
     _mapView.zoomLevel = 17.2;
     [self.view addSubview:_mapView];
+    
+    [self addStartRunningPoint:CLLocationCoordinate2DMake(30.183926, 120.193575)];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+}
+
+-(void)addStartRunningPoint:(CLLocationCoordinate2D)coordinate
+{
+    self.animatedCarAnnotation = [[AnnotationLocation alloc] initWithCoordinate:coordinate];
+    self.animatedCarAnnotation.imageName   = @"location_current_icon";
+    [_mapView addAnnotation:self.animatedCarAnnotation];
 }
 
 #pragma mark -- MAMapViewDelegate
@@ -55,61 +73,43 @@ updatingLocation:(BOOL)updatingLocation
     if(updatingLocation)
     {
         //取出当前位置的坐标
-        NSLog(@"latitude : %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+        NSLog(@"latitude: %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
     }
 }
 
 - (void)mapView:(MAMapView *)mapView didAddAnnotationViews:(NSArray *)views
 {
     MAAnnotationView *view = views[0];
+    MAUserLocationRepresentation *pre = [[MAUserLocationRepresentation alloc] init];
+    pre.fillColor = [UIColor colorWithRed:0.9 green:0.1 blue:0.1 alpha:0];
+    pre.strokeColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.9 alpha:0];
+    pre.image = [UIImage imageNamed:@"location_image"];
+    [_mapView updateUserLocationRepresentation:pre];
     
-    // 放到该方法中用以保证userlocation的annotationView已经添加到地图上了。
-    if ([view.annotation isKindOfClass:[MAUserLocation class]])
-    {
-        MAUserLocationRepresentation *pre = [[MAUserLocationRepresentation alloc] init];
-        pre.fillColor = [UIColor colorWithRed:0.9 green:0.1 blue:0.1 alpha:0];
-        pre.strokeColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.9 alpha:0];
-        pre.image = [UIImage imageNamed:@"location_image"];
-        [_mapView updateUserLocationRepresentation:pre];
-        
-        view.calloutOffset = CGPointMake(0, 0);
-    }
+    view.calloutOffset = CGPointMake(0, 0);
 }
 
-
-//- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
-//{
-//    if ([annotation isKindOfClass:[MAPointAnnotation class]])
-//    {
-//        static NSString *navigationCellIdentifier = @"navigationCellIdentifier";
-//        
-//        MAAnnotationView *poiAnnotationView = (MAAnnotationView*)[_mapView dequeueReusableAnnotationViewWithIdentifier:navigationCellIdentifier];
-//        if (poiAnnotationView == nil)
-//        {
-//            poiAnnotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation
-//                                                             reuseIdentifier:navigationCellIdentifier];
-//        }
-//        
-//        poiAnnotationView.canShowCallout = YES;
-//        
-//            /* 起点. */
-//            if ([[annotation title] isEqualToString:@"起点"])
-//            {
-//                poiAnnotationView.image = [UIImage imageNamed:@"location_current"];
-//            }
-//            /* 终点. */
-//            else if([[annotation title] isEqualToString:@"终点"])
-//            {
-//                poiAnnotationView.image = [UIImage imageNamed:@"endPoint"];
-//            }
-//        
-//        
-//        return poiAnnotationView;
-//    }
-//    
-//    return nil;
-//}
-
+- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
+{
+    if ([annotation isKindOfClass:[AnnotationLocation class]])
+    {
+        static NSString *animatedAnnotationIdentifier = @"AnimatedAnnotationIdentifier";
+        
+        CustomAnnotationView *annotationView = (CustomAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:animatedAnnotationIdentifier];
+        
+        if (annotationView == nil)
+        {
+            annotationView = [[CustomAnnotationView alloc] initWithAnnotation:annotation
+                                                                reuseIdentifier:animatedAnnotationIdentifier];
+            //annotationView.canShowCallout   = YES;
+            //annotationView.draggable        = YES;
+        }
+        
+        return annotationView;
+    }
+    
+    return nil;
+}
 
 #pragma mark -- other
 -(void)viewWillDisappear:(BOOL)animated

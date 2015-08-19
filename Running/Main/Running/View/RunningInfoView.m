@@ -136,8 +136,10 @@
     [button setSelected:!button.selected];
     if (button.selected == NO) {
         imageView.image = [UIImage imageNamed:@"map_up_btn"];
+        _bgView.hidden = NO;
     }else{
         imageView.image = [UIImage imageNamed:@"map_down_btn"];
+        _bgView.hidden = YES;
     }
 }
 

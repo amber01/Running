@@ -88,6 +88,12 @@
 		DB7D83971B81D29800599651 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83951B81D29800599651 /* Default-568h@2x.png */; };
 		DB7D83981B81D29800599651 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83961B81D29800599651 /* Default.png */; };
 		DB7D839A1B81DC3900599651 /* tabbar-more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83991B81DC3900599651 /* tabbar-more@2x.png */; };
+		DBBCDFB81B842DEC008F1735 /* AnnotationLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFB71B842DEC008F1735 /* AnnotationLocation.m */; };
+		DBBCDFBD1B842FCC008F1735 /* animatedCar_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBCDFB91B842FCC008F1735 /* animatedCar_1.png */; };
+		DBBCDFBE1B842FCC008F1735 /* animatedCar_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBCDFBA1B842FCC008F1735 /* animatedCar_2.png */; };
+		DBBCDFBF1B842FCC008F1735 /* animatedCar_3.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBCDFBB1B842FCC008F1735 /* animatedCar_3.png */; };
+		DBBCDFC01B842FCC008F1735 /* animatedCar_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBCDFBC1B842FCC008F1735 /* animatedCar_4.png */; };
+		DBBCDFC31B843047008F1735 /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFC21B843047008F1735 /* CustomAnnotationView.m */; };
 		DBF21B5C1B82DD2400ACFA4F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B5B1B82DD2400ACFA4F /* MineViewController.m */; };
 		DBF21B621B82DD6300ACFA4F /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B611B82DD6300ACFA4F /* HistoryViewController.m */; };
 		DBF21B681B82DDD200ACFA4F /* RunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B671B82DDD200ACFA4F /* RunningViewController.m */; };
@@ -248,6 +254,14 @@
 		DB7D83951B81D29800599651 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DB7D83961B81D29800599651 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DB7D83991B81DC3900599651 /* tabbar-more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-more@2x.png"; sourceTree = "<group>"; };
+		DBBCDFB61B842DEC008F1735 /* AnnotationLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationLocation.h; sourceTree = "<group>"; };
+		DBBCDFB71B842DEC008F1735 /* AnnotationLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationLocation.m; sourceTree = "<group>"; };
+		DBBCDFB91B842FCC008F1735 /* animatedCar_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_1.png; sourceTree = "<group>"; };
+		DBBCDFBA1B842FCC008F1735 /* animatedCar_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_2.png; sourceTree = "<group>"; };
+		DBBCDFBB1B842FCC008F1735 /* animatedCar_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_3.png; sourceTree = "<group>"; };
+		DBBCDFBC1B842FCC008F1735 /* animatedCar_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedCar_4.png; sourceTree = "<group>"; };
+		DBBCDFC11B843047008F1735 /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
+		DBBCDFC21B843047008F1735 /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
 		DBF21B5A1B82DD2400ACFA4F /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		DBF21B5B1B82DD2400ACFA4F /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		DBF21B601B82DD6300ACFA4F /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
@@ -452,6 +466,10 @@
 				188121991B8372AE00C4A25E /* location_image@2x.png */,
 				183C20BF1B837495005DAC45 /* location_current_icon@2x.png */,
 				183C20C11B837630005DAC45 /* endPoint@2x.png */,
+				DBBCDFB91B842FCC008F1735 /* animatedCar_1.png */,
+				DBBCDFBA1B842FCC008F1735 /* animatedCar_2.png */,
+				DBBCDFBB1B842FCC008F1735 /* animatedCar_3.png */,
+				DBBCDFBC1B842FCC008F1735 /* animatedCar_4.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -735,6 +753,10 @@
 				DBF21B6A1B82DE4C00ACFA4F /* StartRunningButton.m */,
 				DBF21B7D1B83233D00ACFA4F /* RunningInfoView.h */,
 				DBF21B7E1B83233D00ACFA4F /* RunningInfoView.m */,
+				DBBCDFB61B842DEC008F1735 /* AnnotationLocation.h */,
+				DBBCDFB71B842DEC008F1735 /* AnnotationLocation.m */,
+				DBBCDFC11B843047008F1735 /* CustomAnnotationView.h */,
+				DBBCDFC21B843047008F1735 /* CustomAnnotationView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -821,6 +843,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBCDFBE1B842FCC008F1735 /* animatedCar_2.png in Resources */,
 				DB7D82AB1B81B9C400599651 /* tabbar_mine@2x.png in Resources */,
 				DB7D83971B81D29800599651 /* Default-568h@2x.png in Resources */,
 				DB7D82451B81B9A400599651 /* Main.storyboard in Resources */,
@@ -834,10 +857,13 @@
 				DB7D82AC1B81B9C400599651 /* tabbar_more@2x.png in Resources */,
 				DB7D83981B81D29800599651 /* Default.png in Resources */,
 				DB7D82AE1B81B9C400599651 /* tabbar_store@2x.png in Resources */,
+				DBBCDFBD1B842FCC008F1735 /* animatedCar_1.png in Resources */,
 				1881219A1B8372AE00C4A25E /* location_image@2x.png in Resources */,
 				DB7D824A1B81B9A400599651 /* LaunchScreen.xib in Resources */,
 				183C20C21B837630005DAC45 /* endPoint@2x.png in Resources */,
 				DB1C13431B8338B3004AFD25 /* map_down_btn@2x.png in Resources */,
+				DBBCDFBF1B842FCC008F1735 /* animatedCar_3.png in Resources */,
+				DBBCDFC01B842FCC008F1735 /* animatedCar_4.png in Resources */,
 				DB7D82471B81B9A400599651 /* Images.xcassets in Resources */,
 				DB7D82AD1B81B9C400599651 /* tabbar_shopping@2x.png in Resources */,
 			);
@@ -868,6 +894,7 @@
 				DB7D832D1B81C92B00599651 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				DB7D83841B81CEB000599651 /* SBJsonBase.m in Sources */,
 				DB7D832E1B81C92B00599651 /* UIAlertView+AFNetworking.m in Sources */,
+				DBBCDFB81B842DEC008F1735 /* AnnotationLocation.m in Sources */,
 				DBF21B6B1B82DE4C00ACFA4F /* StartRunningButton.m in Sources */,
 				DB7D836B1B81CE7600599651 /* UIColor+MyCategory.m in Sources */,
 				DB7D83661B81CE7600599651 /* NSDate+Category.m in Sources */,
@@ -879,6 +906,7 @@
 				DB7D83331B81C92B00599651 /* UIWebView+AFNetworking.m in Sources */,
 				DB7D83231B81C92B00599651 /* AFHTTPRequestOperation.m in Sources */,
 				DB7D836A1B81CE7600599651 /* NSString+MyCategory.m in Sources */,
+				DBBCDFC31B843047008F1735 /* CustomAnnotationView.m in Sources */,
 				DBF21B761B830FAD00ACFA4F /* StartRunningViewController.m in Sources */,
 				DBF21B621B82DD6300ACFA4F /* HistoryViewController.m in Sources */,
 				DB7D83281B81C92B00599651 /* AFURLConnectionOperation.m in Sources */,
