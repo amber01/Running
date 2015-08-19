@@ -101,9 +101,13 @@ updatingLocation:(BOOL)updatingLocation
         
         CLLocation *location0 = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude longitude:userLocation.coordinate.longitude];
         CLLocation *location1 = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude longitude:userLocation.coordinate.longitude];
-        
-        NSMutableArray *array = [NSMutableArray arrayWithObjects:location0, location1, nil];
-        [self drawLineWithLocationArray:array];
+        NSMutableArray *array;
+        if (!array) {
+            array = [[NSMutableArray alloc]init];
+        }
+        NSMutableArray *array1 = [NSMutableArray arrayWithObjects:location0, location1, nil];
+        [array addObjectsFromArray:array1];
+        [self drawLineWithLocationArray:array1];
     }
 }
 
