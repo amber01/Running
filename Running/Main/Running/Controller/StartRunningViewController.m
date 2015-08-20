@@ -167,7 +167,7 @@ updatingLocation:(BOOL)updatingLocation
             
             //卡路里
             float kCal = (weight * sumDistance * 0.001)*1.036;
-            runningInfoView.kcalLabel.text = [NSString stringWithFormat:@"%f",kCal];
+            runningInfoView.kcalLabel.text = [NSString stringWithFormat:@".2%f",kCal];
         }
     }
 }

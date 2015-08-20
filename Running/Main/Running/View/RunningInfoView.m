@@ -92,7 +92,7 @@
         _kcalLabel.textAlignment = NSTextAlignmentCenter;
         _kcalLabel.textColor = textColor;
         _kcalLabel.font = [UIFont fontWithName:@"Helvetica" size:22];
-        _kcalLabel.text = @"23.3";
+        _kcalLabel.text = @"0";
         
         UILabel *kcalTipsLabel = [[UILabel alloc]initWithFrame:CGRectMake(ScreenWidth/2, _speedLabel.bottom + 3, ScreenWidth/2, 20)];
         kcalTipsLabel.textAlignment = NSTextAlignmentCenter;
