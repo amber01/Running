@@ -40,7 +40,7 @@
         _distanceLabel.textAlignment = NSTextAlignmentCenter;
         _distanceLabel.textColor = textColor;
         _distanceLabel.font = [UIFont fontWithName:@"Helvetica" size:45];
-        _distanceLabel.text = @"1232";
+        _distanceLabel.text = @"0";
         
         UILabel *distanceTipsLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, _distanceLabel.bottom + 5, ScreenWidth, 20)];
         distanceTipsLabel.textAlignment = NSTextAlignmentCenter;
@@ -66,7 +66,7 @@
         _averageSpeedLabel.textAlignment = NSTextAlignmentCenter;
         _averageSpeedLabel.textColor = textColor;
         _averageSpeedLabel.font = [UIFont fontWithName:@"Helvetica" size:22];
-        _averageSpeedLabel.text = @"0.5";
+        _averageSpeedLabel.text = @"0";
         
         UILabel *averageSpeedTipsLabel = [[UILabel alloc]initWithFrame:CGRectMake(ScreenWidth/2, _timeLabel.bottom + 3, ScreenWidth/2, 20)];
         averageSpeedTipsLabel.textAlignment = NSTextAlignmentCenter;

@@ -28,6 +28,19 @@
     [super viewDidLoad];
     self.navTitle = @"运动";
     [self createMapView];
+    
+
+    //1.将两个经纬度点转成投影点
+    MAMapPoint point1 = MAMapPointForCoordinate(CLLocationCoordinate2DMake(39.989612,116.480972));
+    MAMapPoint point2 = MAMapPointForCoordinate(CLLocationCoordinate2DMake(39.990347,116.480441));
+    //2.计算距离
+    CLLocationDistance distance = MAMetersBetweenMapPoints(point1,point2);
+    
+    
+    NSString *str = @"http://www.abc.com/news/read/welcome-new-gig/03276";
+    NSArray *arr = [str componentsSeparatedByString:@"gig/"];
+    NSString *strSubStringDigNum = [arr objectAtIndex:1];
+    NSLog(@"%@",strSubStringDigNum);
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -60,7 +73,7 @@ updatingLocation:(BOOL)updatingLocation
     if(updatingLocation)
     {
         //取出当前位置的坐标
-        NSLog(@"latitude : %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+        //NSLog(@"latitude : %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
     }
 }
 

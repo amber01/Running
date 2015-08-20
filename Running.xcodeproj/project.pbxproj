@@ -89,10 +89,6 @@
 		DB7D839A1B81DC3900599651 /* tabbar-more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB7D83991B81DC3900599651 /* tabbar-more@2x.png */; };
 		DBBCDFB81B842DEC008F1735 /* AnnotationLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFB71B842DEC008F1735 /* AnnotationLocation.m */; };
 		DBBCDFC31B843047008F1735 /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFC21B843047008F1735 /* CustomAnnotationView.m */; };
-		DBBCDFCD1B846FF4008F1735 /* CACoordLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFC61B846FF4008F1735 /* CACoordLayer.m */; };
-		DBBCDFCE1B846FF4008F1735 /* MovingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFC81B846FF4008F1735 /* MovingAnnotationView.m */; };
-		DBBCDFCF1B846FF4008F1735 /* TracingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFCA1B846FF4008F1735 /* TracingPoint.m */; };
-		DBBCDFD01B846FF4008F1735 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBCDFCC1B846FF4008F1735 /* Util.m */; };
 		DBF21B5C1B82DD2400ACFA4F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B5B1B82DD2400ACFA4F /* MineViewController.m */; };
 		DBF21B621B82DD6300ACFA4F /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B611B82DD6300ACFA4F /* HistoryViewController.m */; };
 		DBF21B681B82DDD200ACFA4F /* RunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF21B671B82DDD200ACFA4F /* RunningViewController.m */; };
@@ -256,14 +252,6 @@
 		DBBCDFB71B842DEC008F1735 /* AnnotationLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationLocation.m; sourceTree = "<group>"; };
 		DBBCDFC11B843047008F1735 /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
 		DBBCDFC21B843047008F1735 /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
-		DBBCDFC51B846FF4008F1735 /* CACoordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACoordLayer.h; sourceTree = "<group>"; };
-		DBBCDFC61B846FF4008F1735 /* CACoordLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACoordLayer.m; sourceTree = "<group>"; };
-		DBBCDFC71B846FF4008F1735 /* MovingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingAnnotationView.h; sourceTree = "<group>"; };
-		DBBCDFC81B846FF4008F1735 /* MovingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingAnnotationView.m; sourceTree = "<group>"; };
-		DBBCDFC91B846FF4008F1735 /* TracingPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracingPoint.h; sourceTree = "<group>"; };
-		DBBCDFCA1B846FF4008F1735 /* TracingPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracingPoint.m; sourceTree = "<group>"; };
-		DBBCDFCB1B846FF4008F1735 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		DBBCDFCC1B846FF4008F1735 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		DBF21B5A1B82DD2400ACFA4F /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		DBF21B5B1B82DD2400ACFA4F /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		DBF21B601B82DD6300ACFA4F /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
@@ -512,7 +500,6 @@
 		DB7D82BD1B81C57000599651 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				DBBCDFC41B846FF4008F1735 /* MovingAnnotationSource */,
 				DB7D833A1B81CE7600599651 /* CommonClass.h */,
 				DB7D833B1B81CE7600599651 /* CommonClass.m */,
 				DB7D833C1B81CE7600599651 /* UIView+Additions.h */,
@@ -646,21 +633,6 @@
 				DB7D83811B81CEB000599651 /* SBJsonWriter.m */,
 			);
 			path = SBJson;
-			sourceTree = "<group>";
-		};
-		DBBCDFC41B846FF4008F1735 /* MovingAnnotationSource */ = {
-			isa = PBXGroup;
-			children = (
-				DBBCDFC51B846FF4008F1735 /* CACoordLayer.h */,
-				DBBCDFC61B846FF4008F1735 /* CACoordLayer.m */,
-				DBBCDFC71B846FF4008F1735 /* MovingAnnotationView.h */,
-				DBBCDFC81B846FF4008F1735 /* MovingAnnotationView.m */,
-				DBBCDFC91B846FF4008F1735 /* TracingPoint.h */,
-				DBBCDFCA1B846FF4008F1735 /* TracingPoint.m */,
-				DBBCDFCB1B846FF4008F1735 /* Util.h */,
-				DBBCDFCC1B846FF4008F1735 /* Util.m */,
-			);
-			path = MovingAnnotationSource;
 			sourceTree = "<group>";
 		};
 		DBF21B2D1B82DCBA00ACFA4F /* History */ = {
@@ -905,12 +877,9 @@
 				DBBCDFB81B842DEC008F1735 /* AnnotationLocation.m in Sources */,
 				DBF21B6B1B82DE4C00ACFA4F /* StartRunningButton.m in Sources */,
 				DB7D836B1B81CE7600599651 /* UIColor+MyCategory.m in Sources */,
-				DBBCDFCE1B846FF4008F1735 /* MovingAnnotationView.m in Sources */,
 				DB7D83661B81CE7600599651 /* NSDate+Category.m in Sources */,
-				DBBCDFCD1B846FF4008F1735 /* CACoordLayer.m in Sources */,
 				DB7D832A1B81C92B00599651 /* AFURLResponseSerialization.m in Sources */,
 				DB7D83651B81CE7600599651 /* NSData+Category.m in Sources */,
-				DBBCDFD01B846FF4008F1735 /* Util.m in Sources */,
 				DB7D83671B81CE7600599651 /* NSDateFormatter+Category.m in Sources */,
 				DBF21B7F1B83233D00ACFA4F /* RunningInfoView.m in Sources */,
 				DBF21B791B83172600ACFA4F /* SFCountdownView.m in Sources */,
@@ -927,7 +896,6 @@
 				DB7D83641B81CE7600599651 /* HexColor.m in Sources */,
 				DBF21B5C1B82DD2400ACFA4F /* MineViewController.m in Sources */,
 				DB7D83311B81C92B00599651 /* UIProgressView+AFNetworking.m in Sources */,
-				DBBCDFCF1B846FF4008F1735 /* TracingPoint.m in Sources */,
 				DB7D829F1B81B9C400599651 /* BaseViewController.m in Sources */,
 				DB7D83851B81CEB000599651 /* SBJsonParser.m in Sources */,
 				DB7D83831B81CEB000599651 /* NSString+SBJSON.m in Sources */,
@@ -1033,7 +1001,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "02139093-d864-4025-ae4e-01455b46734e";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1071,7 +1039,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "02139093-d864-4025-ae4e-01455b46734e";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
