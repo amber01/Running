@@ -19,7 +19,7 @@
 }
 
 @property (nonatomic, strong) AnnotationLocation *animatedCarAnnotation;
-
+@property (nonatomic, retain) MAPolyline         *routeLine;
 @end
 
 @implementation StartRunningViewController
@@ -51,25 +51,6 @@
     _mapView.scaleOrigin = CGPointMake(_mapView.scaleOrigin.x, 22);
     _mapView.zoomLevel = 17.2;
     [self.view addSubview:_mapView];
-    
-    CLLocationCoordinate2D commonPolylineCoords[4];
-    commonPolylineCoords[0].latitude = 30.184440;
-    commonPolylineCoords[0].longitude = 120.194200;
-    
-    commonPolylineCoords[1].latitude = 30.184985;
-    commonPolylineCoords[1].longitude = 120.193134;
-    
-    commonPolylineCoords[2].latitude = 30.184610;
-    commonPolylineCoords[2].longitude = 120.194258;
-    
-    commonPolylineCoords[3].latitude = 30.184319;
-    commonPolylineCoords[3].longitude = 120.194286;
-    
-    //构造折线对象
-    MAPolyline *commonPolyline = [MAPolyline polylineWithCoordinates:commonPolylineCoords count:4];
-    
-    //在地图上添加折线对象
-    [_mapView addOverlay: commonPolyline];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -77,6 +58,27 @@
     [super viewDidAppear:animated];
     
 }
+
+- (void)drawLineWithLocationArray:(NSMutableArray *)locationArray
+{
+    int pointCount = (int)[locationArray count];
+    CLLocationCoordinate2D *coordinateArray = (CLLocationCoordinate2D *)malloc(pointCount * sizeof(CLLocationCoordinate2D));
+    
+    for (int i = 0; i < pointCount; ++i) {
+        CLLocation *location = [locationArray objectAtIndex:i];
+        coordinateArray[i] = [location coordinate];
+    }
+    
+    NSLog(@"point:%f..%f",coordinateArray->latitude,coordinateArray->longitude);
+    NSLog(@"counts:%d",pointCount);
+    self.routeLine = [MAPolyline polylineWithCoordinates:coordinateArray count:pointCount];
+    [_mapView setVisibleMapRect:[self.routeLine boundingMapRect]];
+    [_mapView addOverlay:self.routeLine];
+
+    free(coordinateArray);
+    coordinateArray = NULL;
+}
+
 
 -(void)addStartRunningPoint:(CLLocationCoordinate2D)coordinate
 {
@@ -97,13 +99,15 @@ updatingLocation:(BOOL)updatingLocation
             [self addStartRunningPoint:CLLocationCoordinate2DMake((userLocation.coordinate.latitude)+0.00012,userLocation.coordinate.longitude)];
         }
         
-    
-        CLLocationCoordinate2D * commonPolylineCoords = malloc(isUpdate * sizeof(CLLocationCoordinate2D));
-        commonPolylineCoords[isUpdate-1] = CLLocationCoordinate2DMake(userLocation.coordinate.latitude,  userLocation.coordinate.longitude);
-        //构造折线对象
-        MAPolyline *commonPolyline = [MAPolyline polylineWithCoordinates:commonPolylineCoords count:isUpdate];
-        //在地图上添加折线对象
-        [_mapView addOverlay: commonPolyline];
+        CLLocation *location0 = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude longitude:userLocation.coordinate.longitude];
+        CLLocation *location1 = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude longitude:userLocation.coordinate.longitude];
+        NSMutableArray *array;
+        if (!array) {
+            array = [[NSMutableArray alloc]init];
+        }
+        NSMutableArray *array1 = [NSMutableArray arrayWithObjects:location0, location1, nil];
+        [array addObjectsFromArray:array1];
+        [self drawLineWithLocationArray:array1];
     }
 }
 
@@ -148,7 +152,7 @@ updatingLocation:(BOOL)updatingLocation
         MAPolylineView *polylineView = [[MAPolylineView alloc] initWithPolyline:overlay];
         
         polylineView.lineWidth = 10.f;
-        polylineView.strokeColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.6];
+        polylineView.strokeColor = [UIColor greenColor];
         //polylineView.lineJoinType = kMALineJoinRound;//连接类型
         //polylineView.lineCapType  = kMALineCapRound;//端点类型
         
