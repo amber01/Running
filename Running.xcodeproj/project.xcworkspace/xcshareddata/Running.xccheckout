@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>447A99C9-FA64-4762-9A3D-43FCF7B488C7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Running</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D60C7F760C066791BBEB03240C18029EF2E758DE</key>
 		<string>https://github.com/amber01/Running.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Running.xcodeproj</string>
+	<string>Running.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D60C7F760C066791BBEB03240C18029EF2E758DE</key>
