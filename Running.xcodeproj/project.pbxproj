@@ -10,13 +10,13 @@
 		183C20C01B837495005DAC45 /* location_current_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C20BF1B837495005DAC45 /* location_current_icon@2x.png */; };
 		188121981B821C1400C4A25E /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 188121971B821C1400C4A25E /* AMap.bundle */; };
 		1881219A1B8372AE00C4A25E /* location_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 188121991B8372AE00C4A25E /* location_image@2x.png */; };
-		18C4FCBC1B821581009673EC /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCBA1B821581009673EC /* MAMapKit.framework */; };
 		18C4FCBF1B8215A0009673EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCBE1B8215A0009673EC /* UIKit.framework */; };
 		18C4FCC11B8215B9009673EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC01B8215B9009673EC /* Foundation.framework */; };
 		18C4FCC31B8215C7009673EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC21B8215C7009673EC /* CoreGraphics.framework */; };
 		18C4FCC51B8215D2009673EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC41B8215D2009673EC /* QuartzCore.framework */; };
 		18C4FCC71B8215ED009673EC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC61B8215ED009673EC /* CoreTelephony.framework */; };
 		18C4FCC91B821610009673EC /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4FCC81B821610009673EC /* libstdc++.6.0.9.dylib */; };
+		DB1032541B86E942000AED8B /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1032531B86E942000AED8B /* MAMapKit.framework */; };
 		DB1C13431B8338B3004AFD25 /* map_down_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1C13411B8338B3004AFD25 /* map_down_btn@2x.png */; };
 		DB1C13441B8338B3004AFD25 /* map_up_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1C13421B8338B3004AFD25 /* map_up_btn@2x.png */; };
 		DB7D823C1B81B9A400599651 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D823B1B81B9A400599651 /* main.m */; };
@@ -113,13 +113,13 @@
 		183C20BF1B837495005DAC45 /* location_current_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_current_icon@2x.png"; sourceTree = "<group>"; };
 		188121971B821C1400C4A25E /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = ../../AMap.bundle; sourceTree = "<group>"; };
 		188121991B8372AE00C4A25E /* location_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_image@2x.png"; sourceTree = "<group>"; };
-		18C4FCBA1B821581009673EC /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../MAMapKit.framework; sourceTree = "<group>"; };
 		18C4FCBE1B8215A0009673EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18C4FCC01B8215B9009673EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18C4FCC21B8215C7009673EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		18C4FCC41B8215D2009673EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18C4FCC61B8215ED009673EC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		18C4FCC81B821610009673EC /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		DB1032531B86E942000AED8B /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		DB1C13411B8338B3004AFD25 /* map_down_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_down_btn@2x.png"; sourceTree = "<group>"; };
 		DB1C13421B8338B3004AFD25 /* map_up_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_up_btn@2x.png"; sourceTree = "<group>"; };
 		DB7D82361B81B9A400599651 /* Running.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Running.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,12 +277,12 @@
 			files = (
 				18C4FCC91B821610009673EC /* libstdc++.6.0.9.dylib in Frameworks */,
 				18C4FCC71B8215ED009673EC /* CoreTelephony.framework in Frameworks */,
+				DB1032541B86E942000AED8B /* MAMapKit.framework in Frameworks */,
 				DB7D83881B81CF9600599651 /* CoreLocation.framework in Frameworks */,
 				18C4FCC51B8215D2009673EC /* QuartzCore.framework in Frameworks */,
 				18C4FCC31B8215C7009673EC /* CoreGraphics.framework in Frameworks */,
 				18C4FCC11B8215B9009673EC /* Foundation.framework in Frameworks */,
 				18C4FCBF1B8215A0009673EC /* UIKit.framework in Frameworks */,
-				18C4FCBC1B821581009673EC /* MAMapKit.framework in Frameworks */,
 				DB7D83941B81D03000599651 /* CFNetwork.framework in Frameworks */,
 				DB7D83921B81D02600599651 /* SystemConfiguration.framework in Frameworks */,
 				DB7D83901B81D01E00599651 /* MobileCoreServices.framework in Frameworks */,
@@ -386,6 +386,7 @@
 		DB7D82641B81B9C400599651 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB1032531B86E942000AED8B /* MAMapKit.framework */,
 				188121971B821C1400C4A25E /* AMap.bundle */,
 				18C4FCC81B821610009673EC /* libstdc++.6.0.9.dylib */,
 				18C4FCC61B8215ED009673EC /* CoreTelephony.framework */,
@@ -393,7 +394,6 @@
 				18C4FCC21B8215C7009673EC /* CoreGraphics.framework */,
 				18C4FCC01B8215B9009673EC /* Foundation.framework */,
 				18C4FCBE1B8215A0009673EC /* UIKit.framework */,
-				18C4FCBA1B821581009673EC /* MAMapKit.framework */,
 				DB7D83931B81D03000599651 /* CFNetwork.framework */,
 				DB7D83911B81D02600599651 /* SystemConfiguration.framework */,
 				DB7D838F1B81D01E00599651 /* MobileCoreServices.framework */,
